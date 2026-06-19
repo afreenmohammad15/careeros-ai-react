@@ -1,29 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CareerOS-AI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerOS AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+section{
+    padding:50px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2563eb;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.tech-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.tech{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Afreen's Portfolio</h1>
+<header>
+    <h1>🚀 CareerOS AI</h1>
+    <p>AI-Powered Placement Readiness & Career Development Platform</p>
+</header>
 
-    <p>I am learning HTML, CSS and JavaScript.</p>
+<section>
+    <h2>About Project</h2>
+    <p style="text-align:center;">
+        CareerOS AI helps students track skills, analyze resumes,
+        prepare for interviews, and improve placement readiness using AI.
+    </p>
+</section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-    </ul>
+<section>
+    <h2>Core Features</h2>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>CareerOS-AI Portfolio Website</li>
-    </ul>
+    <div class="card-container">
 
-    <h2>Contact</h2>
-    <p>Email: afreen@example.com</p>
+        <div class="card">
+            <h3>🎯 Dream Job Dashboard</h3>
+            <p>Track required skills and progress for your dream role.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Skill Tracker</h3>
+            <p>Monitor skills, certifications and completed projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>📄 Resume Analyzer</h3>
+            <p>Get ATS score and resume improvement suggestions.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎤 Mock Interview</h3>
+            <p>Practice HR and technical interviews with AI.</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Internship Tracker</h3>
+            <p>Track internship applications and interview status.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧠 AI Roadmap Generator</h3>
+            <p>Generate personalized learning paths for your career.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Placement Readiness Score</h2>
+
+    <div class="card">
+        <h3>📈 Current Score</h3>
+        <p>Placement Readiness: 82%</p>
+    </div>
+</section>
+
+<section>
+    <h2>Tech Stack</h2>
+
+    <div class="tech-list">
+        <div class="tech">HTML</div>
+        <div class="tech">CSS</div>
+        <div class="tech">JavaScript</div>
+        <div class="tech">React</div>
+        <div class="tech">Node.js</div>
+        <div class="tech">MongoDB</div>
+        <div class="tech">Git</div>
+        <div class="tech">GitHub</div>
+    </div>
+</section>
+
+<section>
+    <h2>Developer</h2>
+
+    <div class="card">
+        <h3>Afreen Mohammad</h3>
+        <p>M.Tech Student</p>
+        <p>Aspiring Full Stack & AI Developer</p>
+        <p>Email: your-email@example.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 CareerOS AI | Built by Afreen Mohammad</p>
+</footer>
 
 </body>
 </html>
