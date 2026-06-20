@@ -9,9 +9,7 @@ function Login({ setLoggedIn }) {
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-
       setLoggedIn(true);
-
     } catch (error) {
       alert(error.message);
     }
