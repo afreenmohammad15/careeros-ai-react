@@ -1,26 +1,26 @@
 import React from "react";
 import ResumeUpload from "./ResumeUpload";
 import Interview from "./Interview";
+import "./App.css";
 
 function Dashboard() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Welcome to CareerOS AI 🚀</h1>
+    <div className="dashboard-container">
+      <div className="card">
+        <h1>🚀 CareerOS AI</h1>
+        <h2>Login Successful!</h2>
+        <p className="welcome-text">
+          Welcome to your AI-powered career assistant.
+        </p>
+      </div>
 
-      <h2>Login Successful!</h2>
+      <div className="card">
+        <ResumeUpload />
+      </div>
 
-      <p>You are now inside the dashboard.</p>
-
-      <ResumeUpload />
-
-      <hr
-        style={{
-          width: "80%",
-          margin: "40px auto",
-        }}
-      />
-
-      <Interview />
+      <div className="card">
+        <Interview />
+      </div>
     </div>
   );
 }
