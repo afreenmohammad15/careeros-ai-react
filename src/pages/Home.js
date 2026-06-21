@@ -1,15 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
+    <div className="container">
       <h1>CareerOS AI</h1>
-      <h2>Welcome to CareerOS AI</h2>
-      <p>AI-Powered Placement Readiness Platform</p>
+
+      <h2>AI-Powered Placement Readiness Platform</h2>
+
+      <p>
+        Upload resumes, analyze resume quality,
+        generate resume scores and practice
+        interview questions.
+      </p>
 
       <Link to="/dashboard">
-        <button>Enter Dashboard</button>
+        <button>Get Started</button>
       </Link>
     </div>
   );

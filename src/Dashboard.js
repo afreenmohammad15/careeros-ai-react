@@ -3,24 +3,41 @@ import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="dashboard">
+
       <h1>CareerOS AI Dashboard</h1>
 
-      <Link to="/resume-upload">
-        <button>Resume Upload</button>
-      </Link>
+      <div className="card-container">
 
-      <br /><br />
+        <div className="card">
+          <h3>Resume Upload</h3>
+          <p>Upload your resume</p>
 
-      <Link to="/resume-analyzer">
-        <button>Resume Analyzer</button>
-      </Link>
+          <Link to="/resume-upload">
+            <button>Open</button>
+          </Link>
+        </div>
 
-      <br /><br />
+        <div className="card">
+          <h3>Resume Analyzer</h3>
+          <p>Analyze resume quality</p>
 
-      <Link to="/interview">
-        <button>Mock Interview</button>
-      </Link>
+          <Link to="/resume-analyzer">
+            <button>Open</button>
+          </Link>
+        </div>
+
+        <div className="card">
+          <h3>Mock Interview</h3>
+          <p>Practice interviews</p>
+
+          <Link to="/interview">
+            <button>Open</button>
+          </Link>
+        </div>
+
+      </div>
+
     </div>
   );
 }
