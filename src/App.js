@@ -1,18 +1,17 @@
-import React, { useState } from "react";
-import Login from "./Login";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
 import Dashboard from "./Dashboard";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-
   return (
-    <div>
-      {loggedIn ? (
-        <Dashboard />
-      ) : (
-        <Login setLoggedIn={setLoggedIn} />
-      )}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
