@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/careeros-ai/static/css/main.d89f502e.css",
-    "main.js": "/careeros-ai/static/js/main.0320d0e6.js",
-    "index.html": "/careeros-ai/index.html",
-    "main.d89f502e.css.map": "/careeros-ai/static/css/main.d89f502e.css.map",
-    "main.0320d0e6.js.map": "/careeros-ai/static/js/main.0320d0e6.js.map"
+    "main.css": "/careeros-ai-react/static/css/main.d89f502e.css",
+    "main.js": "/careeros-ai-react/static/js/main.0320d0e6.js",
+    "index.html": "/careeros-ai-react/index.html",
+    "main.d89f502e.css.map": "/careeros-ai-react/static/css/main.d89f502e.css.map",
+    "main.0320d0e6.js.map": "/careeros-ai-react/static/js/main.0320d0e6.js.map"
   },
   "entrypoints": [
     "static/css/main.d89f502e.css",
