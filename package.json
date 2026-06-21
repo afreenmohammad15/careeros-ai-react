@@ -2,7 +2,7 @@
   "name": "careeros-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://afreenmohammad15.github.io/careeros-ai",
+  "homepage": "https://afreenmohammad15.github.io/careeros-ai-react",
   "dependencies": {
     "firebase": "^12.0.0",
     "react": "^19.1.0",
