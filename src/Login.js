@@ -1,22 +1,24 @@
 import React, { useState } from "react";
-import { auth } from "./firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
 
-function Login({ setLoggedIn }) {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      setLoggedIn(true);
-    } catch (error) {
-      alert(error.message);
+  const handleLogin = () => {
+    if (email && password) {
+      alert("Login Successful!");
+    } else {
+      alert("Please enter email and password");
     }
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "100px" }}>
+    <div
+      style={{
+        textAlign: "center",
+        marginTop: "100px",
+      }}
+    >
       <h2>CareerOS AI Login</h2>
 
       <input
@@ -39,7 +41,9 @@ function Login({ setLoggedIn }) {
       <br />
       <br />
 
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleLogin}>
+        Login
+      </button>
     </div>
   );
 }

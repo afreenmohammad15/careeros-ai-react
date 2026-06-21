@@ -1,10 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <h1>CareerOS AI Dashboard</h1>
-      <p>Dashboard Working Successfully ✅</p>
+
+      <Link to="/resume-upload">
+        <button>Resume Upload</button>
+      </Link>
+
+      <br /><br />
+
+      <Link to="/resume-analyzer">
+        <button>Resume Analyzer</button>
+      </Link>
+
+      <br /><br />
+
+      <Link to="/interview">
+        <button>Mock Interview</button>
+      </Link>
     </div>
   );
 }
