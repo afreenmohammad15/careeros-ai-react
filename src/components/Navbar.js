@@ -13,31 +13,27 @@ function Navbar() {
         Home
       </Link>
 
-      <Link
-        to="/dashboard"
-        style={{ color: "white", margin: "10px" }}
-      >
+      <Link to="/login" style={{ color: "white", margin: "10px" }}>
+        Login
+      </Link>
+
+      <Link to="/signup" style={{ color: "white", margin: "10px" }}>
+        Signup
+      </Link>
+
+      <Link to="/dashboard" style={{ color: "white", margin: "10px" }}>
         Dashboard
       </Link>
 
-      <Link
-        to="/resume-upload"
-        style={{ color: "white", margin: "10px" }}
-      >
+      <Link to="/resume-upload" style={{ color: "white", margin: "10px" }}>
         Resume Upload
       </Link>
 
-      <Link
-        to="/resume-analyzer"
-        style={{ color: "white", margin: "10px" }}
-      >
-        Analyzer
+      <Link to="/resume-analyzer" style={{ color: "white", margin: "10px" }}>
+        Resume Analyzer
       </Link>
 
-      <Link
-        to="/interview"
-        style={{ color: "white", margin: "10px" }}
-      >
+      <Link to="/interview" style={{ color: "white", margin: "10px" }}>
         Interview
       </Link>
     </nav>
